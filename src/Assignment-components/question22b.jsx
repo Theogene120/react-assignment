@@ -1,22 +1,21 @@
 import { useState } from "react";
-import ItemList from "./ItemList";
+import ItemList from "./question22a";
 
-function Counter() {
+function Counter2() {
   const [count, setCount] = useState(0)
 
   console.log("Counter rendered")
 
   return (
-    <div>
+    <div className="ml-10 my-3">
       <h2>Counter: {count}</h2>
 
-      <button onClick={() => setCount(count + 1)}>
+      <button className="border-2 border-black text-white bg-purple-500 p-1 my-4" onClick={() => setCount(count + 1)}>
         Increase
       </button>
-
       <ItemList />
     </div>
   );
 }
 
-export default Counter;
+export default Counter2;

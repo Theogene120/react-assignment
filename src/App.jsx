@@ -23,6 +23,10 @@ import NotFound from "./Assignment-components/question19.jsx";
 // import Home from "./Home";
 import Blog from "./Assignment-components/question20Blog.jsx";
 import Post from "./Assignment-components/question20Post.jsx";
+import Counter2 from "./Assignment-components/question22b.jsx";
+import ReactMemo from "./Assignment-components/question21b.jsx";
+import PerformanceDemo from "./Assignment-components/question23b.jsx";
+import TodoApp from "./Assignment-components/question24b.jsx";
 
 function Home() {
   return (
@@ -57,6 +61,10 @@ function Home() {
         <Link to="/product/2">Product 2</Link>
         <Link to="/product/3">Product 3</Link>
       </div>
+      <ReactMemo /> 
+      <Counter2 /> 
+      <PerformanceDemo />
+      <TodoApp />
     </div>
   );
 }
