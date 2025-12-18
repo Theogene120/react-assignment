@@ -56,17 +56,22 @@ function Home() {
       <CheckboxForm />
       <div className="border border-black mt-20  pb-10">
         <p className="mb-10">Routing -------- Here are the pages</p>
+        <p className="my-5 text-xl font-bold underline">Question 16/17</p>
         <p className=" flex gap-10 text-lg font-semibold text-purple-700 justify-center items-center">
         <Link className="hover:underline" to="/">Home</Link> |{" "}
         <Link className="hover:underline" to="/about">About</Link> |{" "}
         <Link className="hover:underline" to='/contact'>Contact</Link>
       </p>
       </div>
-      <div className="flex gap-20 ml-10 font-semibold my-10">
-        <Link to="/product/1">Product 1</Link>
-        <Link to="/product/2">Product 2</Link>
-        <Link to="/product/3">Product 3</Link>
+      <div>
+        <p className="my-5 text-xl font-bold underline">Question 17</p>
+        <div className="flex gap-20 mx-10 border items-center justify-center border-black  font-semibold p-10">
+          <Link className="hover:underline hover:text-purple-600" to="/product/1">Product 1</Link>
+          <Link className="hover:underline hover:text-purple-600" to="/product/2">Product 2</Link>
+          <Link className="hover:underline hover:text-purple-600" to="/product/3">Product 3</Link>
+        </div>
       </div>
+      
       <ReactMemo /> 
       <Counter2 /> 
       <PerformanceDemo />

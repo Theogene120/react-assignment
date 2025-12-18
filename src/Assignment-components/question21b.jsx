@@ -6,6 +6,7 @@ function ReactMemo() {
 
   return (
     <div className="ml-10 my-5">
+      <p className="my-10  text-xl -ml-10 font-bold underline">Question 21</p>
       <h2 className="text-xl font-bold">Parent Component</h2>
       <p>Counter: {count}</p>
 

@@ -14,12 +14,16 @@ export default function Submetted() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="border border-gray-400 m-10 p-5 flex gap-5">
+        <div>
+            <p className="my-5  text-xl font-bold underline">Question 9</p>
+            <form onSubmit={handleSubmit} className="border border-gray-400 m-10 p-5 flex gap-5">
 
-            <input  placeholder="Name" name="name" value={formData.name} onChange={handleChange} className="border border-black" />
-            <input  placeholder="Email" name="email" value={formData.email} onChange={handleChange} className="border border-black" />
+                <input  placeholder="Name" name="name" value={formData.name} onChange={handleChange} className="border border-black" />
+                <input  placeholder="Email" name="email" value={formData.email} onChange={handleChange} className="border border-black" />
 
-            <button type="submit" className="border-2 border-black p-2 bg-purple-500">Submit</button>
-        </form>
+                <button type="submit" className="border-2 border-black p-2 bg-purple-500">Submit</button>
+            </form>
+        </div>
+        
     )
 }

@@ -52,7 +52,9 @@ function BookRegistration() {
   };
 
   return (
-    <div className="max-w-md ml-10 my-20 p-6 border border-black rounded-lg">
+    <div>
+      <p className="my-10  text-xl font-bold underline">Question 29</p>
+      <div className="max-w-md ml-10 my-20 p-6 border border-black rounded-lg">
       <h2 className="text-2xl font-bold text-purple-400 mb-6 text-center">
         Book Registration
       </h2>
@@ -130,6 +132,8 @@ function BookRegistration() {
         </button>
       </form>
     </div>
+    </div>
+    
   );
 }
 

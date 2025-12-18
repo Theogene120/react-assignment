@@ -6,6 +6,7 @@ function PerformanceDemo() {
 
   return (
     <div className="ml-10 my-5">
+      <p className="my-10  text-xl -ml-10 font-bold underline">Question 23</p>
       <h2 className="text-xl font-bold">Performance Demo</h2>
       <p>Counter: {count}</p>
 

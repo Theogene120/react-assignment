@@ -58,6 +58,7 @@ function LecturerRegistration() {
   return (
     <div className="border-t border-black mt-10">
         <p>Registration Forms</p>
+        <p className="my-10  text-xl font-bold underline">Question 26</p>
         <div className="max-w-md ml-10 mt-10 p-6 border border-black rounded-lg">
         <h2 className="text-2xl font-bold text-purple-400 mb-6 text-center">
             Lecturer Registration

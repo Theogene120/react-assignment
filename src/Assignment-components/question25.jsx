@@ -4,9 +4,10 @@ const StaticUI = React.memo(() => {
   console.log("StaticUI rendered");
 
   return (
-    <div>
-      <h2>Welcome to the Live Clock App</h2>
-      <p>This text should NOT re-render every second.</p>
+    <div className="ml-10">
+      <p className="my-10  text-xl -ml-10 font-bold underline">Question 25</p>
+      <h2 className="text-2xl font-bold">Welcome to the Live Clock App</h2>
+      <p className="font-semibold">This text should NOT re-render every second.</p>
     </div>
   );
 });
@@ -25,7 +26,7 @@ function Clock() {
     return () => clearInterval(interval);
   }, []);
 
-  return <h3>Current Time: {time.toLocaleTimeString()}</h3>;
+  return <h3 className="ml-10 font-bold">Current Time: {time.toLocaleTimeString()}</h3>;
 }
 
 

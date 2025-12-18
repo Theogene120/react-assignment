@@ -11,6 +11,7 @@ export default function Toggle() {
         <div className="border-t border-black">
             <p>Events</p>
             <div className="ml-10 mt-5">
+                <p className="my-5 -ml-10 text-xl font-bold underline">Question 6</p>
                 <p>Click on button below</p>
                 <button className="mt-2 py-1 px-4 border-2 border-black bg-purple-500 text-white font-bold" onClick={change}>{toggle}</button>
             </div>
