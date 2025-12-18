@@ -27,6 +27,12 @@ import Counter2 from "./Assignment-components/question22b.jsx";
 import ReactMemo from "./Assignment-components/question21b.jsx";
 import PerformanceDemo from "./Assignment-components/question23b.jsx";
 import TodoApp from "./Assignment-components/question24b.jsx";
+import LiveTimeApp from "./Assignment-components/question25.jsx";
+import LecturerRegistration from "./Assignment-components/question26.jsx";
+import StudentRegistration from "./Assignment-components/question27.jsx";
+import DriverRegistration from "./Assignment-components/question28.jsx";
+import ModuleRegistration from "./Assignment-components/question30.jsx";
+import BookRegistration from "./Assignment-components/question29.jsx";
 
 function Home() {
   return (
@@ -65,6 +71,12 @@ function Home() {
       <Counter2 /> 
       <PerformanceDemo />
       <TodoApp />
+      <LiveTimeApp />
+      <LecturerRegistration />
+      <StudentRegistration />
+      <DriverRegistration />
+      <BookRegistration />
+      <ModuleRegistration />
     </div>
   );
 }

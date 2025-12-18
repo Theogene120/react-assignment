@@ -12,17 +12,18 @@ function TodoApp() {
   };
 
   return (
-    <div className="ml-10">
+    <div className="ml-10 my-20">
       <h2 className="text-xl font-bold">Todo App</h2>
 
       <input
+        className="border-2 border-black h-10"
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Enter todo"
       />
 
-      <button onClick={addTodo}>Add</button>
+      <button className="border-2 border-black bg-purple-400 p-2 px-8 text-white" onClick={addTodo}>Add</button>
 
       <TodoList todos={todos} />
     </div>
