@@ -1,0 +1,81 @@
+import { Routes, Route, Link } from "react-router-dom";
+
+import WelcomeBack from "./Assignment-components/question1.jsx";
+import TodayDate from "./Assignment-components/question1b.jsx";
+import Hobbies from "./Assignment-components/question2.jsx";
+import Button from "./Assignment-components/question3.jsx";
+import Card from "./Assignment-components/question4.jsx";
+import ItemList from "./Assignment-components/question5.jsx";
+import Toggle from "./Assignment-components/question6.jsx";
+import Counter from "./Assignment-components/question7.jsx";
+import Hover from "./Assignment-components/question8.jsx";
+import Submetted from "./Assignment-components/question9.jsx";
+import Dropdown from "./Assignment-components/question10.jsx";
+import LoginForm from "./Assignment-components/question11and12.jsx";
+import OtherForm from "./Assignment-components/question13.jsx";
+import MultiStepForm from "./Assignment-components/question14.jsx";
+import CheckboxForm from "./Assignment-components/question15.jsx";
+import About from "./Assignment-components/question16About.jsx";
+import Contact from "./Assignment-components/question16Contant.jsx";
+import ProductDetails from "./Assignment-components/question17.jsx";
+import NotFound from "./Assignment-components/question19.jsx";
+
+// import Home from "./Home";
+import Blog from "./Assignment-components/question20Blog.jsx";
+import Post from "./Assignment-components/question20Post.jsx";
+
+function Home() {
+  return (
+    <div>
+
+      <WelcomeBack />
+      <TodayDate />
+      <Hobbies />
+      <Button text="Click Me" color="purple" />
+      <Button text="Click Me Again" color="blue" />
+      <Card name="John Peter" age={35} email="johnpeter@gmail.com" />
+      <ItemList />
+      <Toggle />
+      <Counter />
+      <Hover />
+      <Submetted />
+      <Dropdown />
+      <LoginForm />
+      <OtherForm />
+      <MultiStepForm />
+      <CheckboxForm />
+      <div className="border border-black mt-20  pb-10">
+        <p className="mb-10">Routing -------- Here are the pages</p>
+        <p className=" flex gap-10 text-lg font-semibold text-purple-700 justify-center items-center">
+        <Link className="hover:underline" to="/">Home</Link> |{" "}
+        <Link className="hover:underline" to="/about">About</Link> |{" "}
+        <Link className="hover:underline" to='/contact'>Contact</Link>
+      </p>
+      </div>
+      <div className="flex gap-20 ml-10 font-semibold my-10">
+        <Link to="/product/1">Product 1</Link>
+        <Link to="/product/2">Product 2</Link>
+        <Link to="/product/3">Product 3</Link>
+      </div>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/product/:id" element={<ProductDetails />} />
+      <Route path="*" element={<NotFound />} />
+
+      {/* Parent blog route */}
+      <Route path="/blog" element={<Blog />}>
+        {/* Nested child route */}
+        <Route path=":postId" element={<Post />} />
+        
+      </Route>
+    </Routes>
+  );
+}
