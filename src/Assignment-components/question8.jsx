@@ -10,12 +10,12 @@ export default function Hover() {
             <p className="my-5 text-xl font-bold underline">Question 8</p>
             <div
 
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        style={{
-            height : '200px',
-            width : '200px',
-            backgroundColor : hover ? 'lightblue' : 'white'
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            style={{
+                height : '200px',
+                width : '200px',
+                backgroundColor : hover ? 'lightblue' : 'white'
         }}
         className="m-10 flex justify-center items-center border border-purple-600"
         > Hover over me
