@@ -96,21 +96,83 @@
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-let calculator = { 
-    add: function(a, b) { return a + b; }, 
-    subtract: function(a, b) { return a - b; } 
-};
+// let calculator = { 
+//     add: function(a, b) { return a + b; }, 
+//     subtract: function(a, b) { return a - b; } 
+// };
 
-console.log(calculator.add(3,4))
-console.log(calculator.subtract(3,4))
+// console.log(calculator.add(3,4))
+// console.log(calculator.subtract(3,4))
 
-let mutliply = (a,b) => a * b 
-calculator.mutliply = mutliply
-let div = (a,b) => a / b 
-calculator.division = div
-console.log(calculator.mutliply(3,4))
+// let mutliply = (a,b) => a * b 
+// calculator.mutliply = mutliply
+// let div = (a,b) => a / b 
+// calculator.division = div
+// console.log(calculator.mutliply(3,4))
 
-for(let key in calculator){
-    console.log(key)
-}
+// for(let key in calculator){
+//     console.log(key)
+// }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let employee = { 
+//     name: "Emma", 
+//     address: { 
+//     city: "Kigali", 
+//     country: "Rwanda" 
+//     } 
+// }; 
+
+// console.log(employee.address.city)
+// employee.address.country = 'Canada'
+// console.log(employee)
+// employee.address.postalCode = 1011
+// console.log(employee)
+// for(let key in employee.address){
+//     console.log(key)
+// }
+
+// delete employee.address.city
+// console.log(employee)
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let person = { 
+// firstName: "Paul", 
+// lastName: "Smith", 
+// age: 28 
+// }; 
+
+// let {firstName, lastName, ...rest} = person
+// console.log(rest)
+// let {age: personAge} = person             // rename
+// let {gender = "Gender not fund"} = person // default value
+
+// let info = ({firstName, lastName, age: personAge, gender = "Gender not fund"}) => 
+//     `Fist name: ${firstName} \nLast name: ${lastName} \nAge: ${personAge} \nGender: ${gender}`
+
+// console.log(info(person)) // display everything
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let colors = ["Red", "Green", "Blue"]; 
+
+// let [firstColor, secondColor, ...rest] = colors
+// console.log(firstColor)
+// console.log(secondColor)
+// console.log(rest)
+// let [_ , color2, color3, color4 = 'Skyblue'] = colors
+// console.log(`${color2}, ${color3}, ${color4}`)
+
+// // Swapping
+
+// let a = 'red';
+// let b = 'blue';
+
+// [a, b] = [b, a]
+
+// console.log(a, b)
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
