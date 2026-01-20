@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="head">This is the page I'm gonna work with</h1>
+    <button id="btn">Change Color</button>
+    <hr>
+    <p id="hide">Element to be hidden when button clicked</p>
+    <button id="btn2">Click to hide</button>
+    <hr>
+    <ul id="myList">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+    <button id="btn3">Clear List</button>
+    <hr>
+    <script>
+        let button = document.getElementById('btn')
+        let body = document.getElementById('body')
+        let pToHide = document.getElementById('hide')
+        let button2 = document.getElementById('btn2')
+
+        button.addEventListener('click', () => {
+            if(body.style.backgroundColor === 'skyblue'){
+                body.style.backgroundColor = 'white'
+            }else{
+                body.style.backgroundColor = 'skyblue'
+            }
+        })
+
+        button2.addEventListener('click', () =>{
+            if(pToHide.style.display === 'none'){
+                pToHide.style.display = 'block'
+                button2.textContent = 'Click to hide'
+            }else{
+                pToHide.style.display = 'none'
+                button2.textContent = 'Click to show'
+            }
+        })
+
+        let mypara = document.createElement('p')
+        mypara.textContent = 'I created by JavaScript itself'
+        body.append(mypara)
+
+        let mylist = document.getElementById('myList')
+        let button3 = document.getElementById('btn3')
+        let clearList = function() {
+            mylist.innerHTML = ''
+        }
+        button3.addEventListener('click', clearList)
+
+        let myHead = document.getElementById('head')
+        let change = () => myHead.textContent = "I'm already done with this page"
+        button3.addEventListener('click', change)
+    </script>
+</body>
+</html>
