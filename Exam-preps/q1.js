@@ -176,3 +176,58 @@
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// let data = { 
+//     id: 1, 
+//     title: "JavaScript" 
+// };
+
+// let jsonObj = JSON.stringify(data)
+// console.log(jsonObj)
+// let parsedObj = JSON.parse(jsonObj)
+// console.log(parsedObj)
+// console.log(parsedObj.title)
+// parsedObj.author = "Theos"
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let months = ["Jan", "Feb", "Mar", "Apr", "May"]; 
+
+// months.splice(2, 1)
+// console.log(months)         // [ 'Jan', 'Feb', 'Apr', 'May' ]
+
+// months.splice(2, 0, 'Jun')
+// console.log(months)        // [ 'Jan', 'Feb', 'Jun', 'Apr', 'May' ]
+
+// let first3 = months.slice(0,3)
+// console.log(first3)           // [ 'Jan', 'Feb', 'Jun' ]
+
+// months.splice(3, 1, 'July')  // [ 'Jan', 'Feb', 'Jun', 'July', 'May' ]
+// console.log(months)
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let values = [10, "20", 30, "40"]; 
+
+// let num = values.every(v => typeof v === 'number')
+// console.log(num)
+// console.log(values)
+// let numValues = values.map(v => Number(v))
+// console.log(numValues)
+// let onlyNum = values.filter(v => typeof v === 'number')
+// console.log(onlyNum)
+
+// let sum = numValues.reduce((v, sum) => sum + v,0)
+// console.log(sum)
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let products = [ 
+{ name: "Phone", price: 500 }, 
+{ name: "Laptop", price: 1000 }, 
+{ name: "Tablet", price: 300 } 
+]; 
+
+let price = products.map(obj => obj.price)
+console.log(price)
+let exp = products.filter(obj => obj.price === Math.max(...price))
+console.log(exp)

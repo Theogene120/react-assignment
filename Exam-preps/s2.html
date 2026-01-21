@@ -17,7 +17,7 @@
         <li>Banana</li>
         <li>Orange</li>
     </ul>
-    <button id="btn3">Clear List</button>
+    <button id="btn3" class="theo">Clear List</button>
     <hr>
     <script>
         let button = document.getElementById('btn')
@@ -57,6 +57,16 @@
         let myHead = document.getElementById('head')
         let change = () => myHead.textContent = "I'm already done with this page"
         button3.addEventListener('click', change)
+
+        function get(element){
+            return element.getAttribute('class')
+        }
+        console.log(get(button3))
+        
+        function set(element, attributeName, value){
+            element.setAttribute(attributeName, value)
+        }
+        set(myHead, 'class', 'head1')
     </script>
 </body>
 </html>

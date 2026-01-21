@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function CheckboxForm() {
-  const options = ["Reading", "Coding", "Music", "Traveling"];
+  const options = ["Reading", "Coding", "Music", "Traveling", 'Cooking', "hiking", 'Joging', "sleeping"];
 
   const [selected, setSelected] = useState([]);
 

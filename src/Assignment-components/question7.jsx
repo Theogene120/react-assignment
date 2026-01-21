@@ -9,8 +9,8 @@ export default function Counter() {
             <p className="my-5 -ml-10 text-xl font-bold underline">Question 7</p>
             <p>{counter}</p>
             <p className="flex gap-10">
-                <button onClick={() => setCounter(counter + 1)} className="border-2 border-black mt-2 px-2 bg-purple-400">Increase</button>
-                <button onClick={() => setCounter(counter === 0 ? 0 : counter - 1)} className="border-2 border-black mt-2 px-2 bg-purple-400">Decrease</button>
+                <button onClick={() => setCounter(counter + 1)} className="border-2 border-black mt-2 px-2 text-white" style={{backgroundColor: 'green'}}>Increase</button>
+                <button onClick={() => setCounter(counter === 0 ? 0 : counter - 1)} className="border-2 border-black mt-2 px-2 text-white" style={{backgroundColor: 'red'}}>Decrease</button>
             </p>
         </div>
     )

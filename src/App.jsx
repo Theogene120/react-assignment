@@ -19,6 +19,7 @@ import About from "./Assignment-components/question16About.jsx";
 import Contact from "./Assignment-components/question16Contant.jsx";
 import ProductDetails from "./Assignment-components/question17.jsx";
 import NotFound from "./Assignment-components/question19.jsx";
+import Gasabo from "./Assignment-components/gasabo.jsx";
 
 // import Home from "./Home";
 import Blog from "./Assignment-components/question20Blog.jsx";
@@ -33,6 +34,9 @@ import StudentRegistration from "./Assignment-components/question27.jsx";
 import DriverRegistration from "./Assignment-components/question28.jsx";
 import ModuleRegistration from "./Assignment-components/question30.jsx";
 import BookRegistration from "./Assignment-components/question29.jsx";
+
+// Exam preps component
+import Cccontainer from "./Assignment-components/aaContainer.jsx";
 
 function Home() {
   return (
@@ -58,10 +62,11 @@ function Home() {
         <p className="mb-10">Routing -------- Here are the pages</p>
         <p className="my-5 text-xl font-bold underline">Question 16/17</p>
         <p className=" flex gap-10 text-lg font-semibold text-purple-700 justify-center items-center">
-        <Link className="hover:underline" to="/">Home</Link> |{" "}
-        <Link className="hover:underline" to="/about">About</Link> |{" "}
-        <Link className="hover:underline" to='/contact'>Contact</Link>
-      </p>
+          <Link className="hover:underline" to="/">Home</Link> |{" "}
+          <Link className="hover:underline" to="/about">About</Link> |{" "}
+          <Link className="hover:underline" to='/contact'>Contact</Link>  |{" "}
+          <Link className="hover:underline" to='/gasabo'>Gasabo</Link>
+        </p>
       </div>
       <div>
         <p className="my-5 text-xl font-bold underline">Question 17</p>
@@ -82,6 +87,8 @@ function Home() {
       <DriverRegistration />
       <BookRegistration />
       <ModuleRegistration />
+      <Cccontainer />
+      
     </div>
   );
 }
@@ -92,6 +99,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/gasabo" element={<Gasabo />} />
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="*" element={<NotFound />} />
 

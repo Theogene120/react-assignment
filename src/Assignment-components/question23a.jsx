@@ -3,7 +3,7 @@ import React from "react";
 const HeavyCalculation = React.memo(({ number }) => {
 
   let result = 0;
-  for (let i = 0; i < 1_000_000_000; i++) {
+  for (let i = 0; i < 1000000000; i++) {
     result += number;
   }
 
